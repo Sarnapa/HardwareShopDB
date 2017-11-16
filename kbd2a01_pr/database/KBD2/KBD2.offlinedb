@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProviderSettings xmlns="http://xmlns.oracle.com/ide/hash">
+   <hash n="dataTypeSettings">
+      <value n="databaseType" v="Oracle Database"/>
+      <value n="databaseVersion" v="110"/>
+   </hash>
+   <value n="id" v="6ba76e3e-6553-4d47-a96f-454836e141c7"/>
+   <value n="name" v="KBD2"/>
+   <value n="offlineDBSchema" v=""/>
+</ProviderSettings>
