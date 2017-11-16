@@ -53,7 +53,7 @@
       <properties>
         <entry>
           <key>Comment</key>
-          <value class="java.lang.String">Null = brak danych.</value>
+          <value class="java.lang.String">Null = brak danych</value>
         </entry>
       </properties>
     </column>
@@ -74,7 +74,7 @@
       <properties>
         <entry>
           <key>Comment</key>
-          <value class="java.lang.String">Null = brak danych.</value>
+          <value class="java.lang.String">Null = brak danych</value>
         </entry>
       </properties>
     </column>

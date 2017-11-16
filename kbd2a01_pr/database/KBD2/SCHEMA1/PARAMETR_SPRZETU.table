@@ -180,6 +180,10 @@
   </indexes>
   <properties>
     <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">Wartość parametru w WARTOSC_TEKSTOWA lub WARTOSC_NUMERYCZNA</value>
+    </entry>
+    <entry>
       <key>TableType</key>
       <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
     </entry>

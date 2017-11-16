@@ -46,6 +46,12 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Null = brak danych</value>
+        </entry>
+      </properties>
     </column>
   </columns>
   <constraints>
