@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>PRODUCENT</name>
+  <name>PRODUCENCI</name>
   <columns>
     <column>
-      <name>PRODUCENT_ID</name>
+      <name>ID_PRODUCENTA</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -59,9 +59,9 @@
       <name>PRODUCENT_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>PRODUCENT_ID</name>
+          <name>ID_PRODUCENTA</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>PRODUCENT</name>
+            <name>PRODUCENCI</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -71,9 +71,9 @@
       </columnIDs>
       <enabled>true</enabled>
       <indexID class="oracle.javatools.db.NameBasedID">
-        <name>PRODUCENT_PK</name>
+        <name>PRODUCENCI_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>PRODUCENT</name>
+          <name>PRODUCENCI</name>
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
@@ -82,12 +82,12 @@
       </indexID>
     </constraint>
     <constraint class="oracle.javatools.db.UniqueConstraint">
-      <name>PRODUCENT_UK1</name>
+      <name>PRODUCENT_UK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>NAZWA</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>PRODUCENT</name>
+            <name>PRODUCENCI</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -97,7 +97,7 @@
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>KRAJ_PRODUKCJI</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>PRODUCENT</name>
+            <name>PRODUCENCI</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -107,9 +107,9 @@
       </columnIDs>
       <enabled>true</enabled>
       <indexID class="oracle.javatools.db.NameBasedID">
-        <name>PRODUCENT_UK1</name>
+        <name>PRODUCENCI_UK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>PRODUCENT</name>
+          <name>PRODUCENCI</name>
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
@@ -120,10 +120,10 @@
   </constraints>
   <indexes>
     <index>
-      <name>PRODUCENT_PK</name>
+      <name>PRODUCENCI_PK</name>
       <columnExpressions>
         <columnExpression>
-          <expressionSource>PRODUCENT_ID</expressionSource>
+          <expressionSource>ID_PRODUCENTA</expressionSource>
           <orderType>ASC</orderType>
         </columnExpression>
       </columnExpressions>
@@ -134,7 +134,7 @@
       <systemGenerated>true</systemGenerated>
     </index>
     <index>
-      <name>PRODUCENT_UK1</name>
+      <name>PRODUCENCI_UK</name>
       <columnExpressions>
         <columnExpression>
           <expressionSource>NAZWA</expressionSource>

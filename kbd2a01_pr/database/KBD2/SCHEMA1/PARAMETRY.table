@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>PARAMETR_SPRZETU</name>
+  <name>PARAMETRY</name>
   <columns>
     <column>
-      <name>PARAMETR_SPRZETU</name>
+      <name>ID_PARAMETRU</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>precision</key>
-            <value class="java.lang.String">16</value>
+            <value class="java.lang.String">8</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -18,12 +18,42 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>WARTOSC_TEKSTOWA</name>
+      <name>NAZWA</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>size</key>
-            <value class="java.lang.Long">80</value>
+            <value class="java.lang.Long">40</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>TYP_WARTOSCI</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">1</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>CHAR</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>JEDNOSTKA</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -31,48 +61,20 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Null = brak danych</value>
+        </entry>
+      </properties>
     </column>
     <column>
-      <name>WARTOSC_NUMERYCZNA</name>
+      <name>ID_RODZAJU</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>precision</key>
-            <value class="java.lang.String">24</value>
-          </entry>
-          <entry>
-            <key>scale</key>
-            <value class="java.lang.Integer">8</value>
-          </entry>
-        </attributeValues>
-        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <typeName>NUMBER</typeName>
-        </dataTypeID>
-      </dataTypeUsage>
-      <notNull>false</notNull>
-    </column>
-    <column>
-      <name>PARAMETR_ID</name>
-      <dataTypeUsage>
-        <attributeValues>
-          <entry>
-            <key>precision</key>
-            <value class="java.lang.String">8</value>
-          </entry>
-        </attributeValues>
-        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <typeName>NUMBER</typeName>
-        </dataTypeID>
-      </dataTypeUsage>
-      <notNull>true</notNull>
-    </column>
-    <column>
-      <name>SPRZET_ID</name>
-      <dataTypeUsage>
-        <attributeValues>
-          <entry>
-            <key>precision</key>
-            <value class="java.lang.String">8</value>
+            <value class="java.lang.String">6</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -84,12 +86,22 @@
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>PARAMETR_SPRZETU_PK</name>
+      <name>PARAMETR_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>PARAMETR_SPRZETU</name>
+          <name>ID_PARAMETRU</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>PARAMETR_SPRZETU</name>
+            <name>PARAMETRY</name>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>TYP_WARTOSCI</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>PARAMETRY</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -99,9 +111,9 @@
       </columnIDs>
       <enabled>true</enabled>
       <indexID class="oracle.javatools.db.NameBasedID">
-        <name>PARAMETR_SPRZETU_PK</name>
+        <name>PARAMETR_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>PARAMETR_SPRZETU</name>
+          <name>PARAMETRY</name>
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
@@ -110,12 +122,12 @@
       </indexID>
     </constraint>
     <constraint class="oracle.javatools.db.FKConstraint">
-      <name>PARAMETR_SPRZETU_PARAMETR_FK1</name>
+      <name>PARAMETR_RODZAJ_SPRZETU_FK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>PARAMETR_ID</name>
+          <name>ID_PARAMETRU</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>PARAMETR_SPRZETU</name>
+            <name>PARAMETRY</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -125,9 +137,9 @@
       </columnIDs>
       <enabled>true</enabled>
       <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>PARAMETR_PK</name>
+        <name>RODZAJ_SPRZETU_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>PARAMETR</name>
+          <name>RODZAJE_SPRZETU</name>
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
@@ -135,39 +147,41 @@
         <type>CONSTRAINT</type>
       </referenceID>
     </constraint>
-    <constraint class="oracle.javatools.db.FKConstraint">
-      <name>PARAMETR_SPRZETU_SPRZET_FK1</name>
-      <columnIDs>
-        <columnID class="oracle.javatools.db.NameBasedID">
-          <name>SPRZET_ID</name>
-          <parent class="oracle.javatools.db.NameBasedID">
-            <name>PARAMETR_SPRZETU</name>
-            <schemaName>SCHEMA1</schemaName>
-            <type>TABLE</type>
-          </parent>
-          <schemaName>SCHEMA1</schemaName>
-          <type>COLUMN</type>
-        </columnID>
-      </columnIDs>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <name>PARAM_TYP_WARTOSCI_CHK1</name>
+      <checkCondition>TYP_WARTOSCI IN ( &apos;T&apos;, &apos;N&apos;)</checkCondition>
       <enabled>true</enabled>
-      <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>SPRZET_PK</name>
-        <parent class="oracle.javatools.db.NameBasedID">
-          <name>SPRZET</name>
-          <schemaName>SCHEMA1</schemaName>
-          <type>TABLE</type>
-        </parent>
-        <schemaName>SCHEMA1</schemaName>
-        <type>CONSTRAINT</type>
-      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <name>PARAM_TYP_WARTOSCI_CHK2</name>
+      <checkCondition>TYP_WARTOSCI = UPPER(TYP_WARTOSCI)</checkCondition>
+      <enabled>true</enabled>
     </constraint>
   </constraints>
   <indexes>
     <index>
-      <name>PARAMETR_SPRZETU_PK</name>
+      <name>PARAMETRY_ID_RODZAJU_IDX</name>
       <columnExpressions>
         <columnExpression>
-          <expressionSource>PARAMETR_SPRZETU</expressionSource>
+          <expressionSource>ID_RODZAJU</expressionSource>
+          <orderType>ASC</orderType>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>PARAMETR_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>ID_PARAMETRU</expressionSource>
+          <orderType>ASC</orderType>
+        </columnExpression>
+        <columnExpression>
+          <expressionSource>TYP_WARTOSCI</expressionSource>
           <orderType>ASC</orderType>
         </columnExpression>
       </columnExpressions>
@@ -179,10 +193,6 @@
     </index>
   </indexes>
   <properties>
-    <entry>
-      <key>Comment</key>
-      <value class="java.lang.String">Wartość parametru w WARTOSC_TEKSTOWA lub WARTOSC_NUMERYCZNA</value>
-    </entry>
     <entry>
       <key>TableType</key>
       <value class="oracle.javatools.db.Table$TableType">NORMAL</value>

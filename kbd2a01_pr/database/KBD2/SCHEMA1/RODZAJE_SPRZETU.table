@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>RODZAJ_SPRZETU</name>
+  <name>RODZAJE_SPRZETU</name>
   <columns>
     <column>
-      <name>RODZAJ_ID</name>
+      <name>ID_RODZAJU</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -32,15 +32,30 @@
       </dataTypeUsage>
       <notNull>true</notNull>
     </column>
+    <column>
+      <name>OPIS</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">256</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
       <name>RODZAJ_SPRZETU_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>RODZAJ_ID</name>
+          <name>ID_RODZAJU</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>RODZAJ_SPRZETU</name>
+            <name>RODZAJE_SPRZETU</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -50,9 +65,9 @@
       </columnIDs>
       <enabled>true</enabled>
       <indexID class="oracle.javatools.db.NameBasedID">
-        <name>RODZAJ_SPRZETU_PK</name>
+        <name>RODZAJE_SPRZETU_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>RODZAJ_SPRZETU</name>
+          <name>RODZAJE_SPRZETU</name>
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
@@ -61,12 +76,12 @@
       </indexID>
     </constraint>
     <constraint class="oracle.javatools.db.UniqueConstraint">
-      <name>RODZAJ_SPRZETU_UK1</name>
+      <name>RODZAJ_SPRZETU_UK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>NAZWA</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>RODZAJ_SPRZETU</name>
+            <name>RODZAJE_SPRZETU</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -76,9 +91,9 @@
       </columnIDs>
       <enabled>true</enabled>
       <indexID class="oracle.javatools.db.NameBasedID">
-        <name>RODZAJ_SPRZETU_UK1</name>
+        <name>RODZAJE_SPRZETU_UK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>RODZAJ_SPRZETU</name>
+          <name>RODZAJE_SPRZETU</name>
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
@@ -89,10 +104,10 @@
   </constraints>
   <indexes>
     <index>
-      <name>RODZAJ_SPRZETU_PK</name>
+      <name>RODZAJE_SPRZETU_PK</name>
       <columnExpressions>
         <columnExpression>
-          <expressionSource>RODZAJ_ID</expressionSource>
+          <expressionSource>ID_RODZAJU</expressionSource>
           <orderType>ASC</orderType>
         </columnExpression>
       </columnExpressions>
@@ -103,7 +118,7 @@
       <systemGenerated>true</systemGenerated>
     </index>
     <index>
-      <name>RODZAJ_SPRZETU_UK1</name>
+      <name>RODZAJE_SPRZETU_UK</name>
       <columnExpressions>
         <columnExpression>
           <expressionSource>NAZWA</expressionSource>

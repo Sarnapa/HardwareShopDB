@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
-  <name>PARAMETR</name>
+  <name>SPRZETY</name>
   <columns>
     <column>
-      <name>PARAMETR_ID</name>
+      <name>ID_SPRZETU</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -18,12 +18,12 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>NAZWA</name>
+      <name>NAZWA_MODELU</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
             <key>size</key>
-            <value class="java.lang.Long">40</value>
+            <value class="java.lang.Long">80</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
@@ -33,31 +33,20 @@
       <notNull>true</notNull>
     </column>
     <column>
-      <name>TYP_WARTOSCI</name>
+      <name>CENA</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
-            <key>size</key>
-            <value class="java.lang.Long">10</value>
+            <key>precision</key>
+            <value class="java.lang.String">8</value>
           </entry>
-        </attributeValues>
-        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <typeName>VARCHAR2</typeName>
-        </dataTypeID>
-      </dataTypeUsage>
-      <notNull>true</notNull>
-    </column>
-    <column>
-      <name>JEDNOSTKA</name>
-      <dataTypeUsage>
-        <attributeValues>
           <entry>
-            <key>size</key>
-            <value class="java.lang.Long">20</value>
+            <key>scale</key>
+            <value class="java.lang.Integer">2</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <typeName>VARCHAR2</typeName>
+          <typeName>NUMBER</typeName>
         </dataTypeID>
       </dataTypeUsage>
       <notNull>false</notNull>
@@ -69,7 +58,43 @@
       </properties>
     </column>
     <column>
-      <name>RODZAJ_ID</name>
+      <name>ILOSC</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">8</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Null = brak danych</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>ID_PRODUCENTA</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">6</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <name>ID_RODZAJU</name>
       <dataTypeUsage>
         <attributeValues>
           <entry>
@@ -86,12 +111,12 @@
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>PARAMETR_PK</name>
+      <name>SPRZET_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>PARAMETR_ID</name>
+          <name>ID_SPRZETU</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>PARAMETR</name>
+            <name>SPRZETY</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -101,9 +126,9 @@
       </columnIDs>
       <enabled>true</enabled>
       <indexID class="oracle.javatools.db.NameBasedID">
-        <name>PARAMETR_PK</name>
+        <name>SPRZETY_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>PARAMETR</name>
+          <name>SPRZETY</name>
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
@@ -112,12 +137,38 @@
       </indexID>
     </constraint>
     <constraint class="oracle.javatools.db.FKConstraint">
-      <name>PARAMETR_RODZAJ_SPRZETU_FK1</name>
+      <name>SPRZET_PRODUCENT_FK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
-          <name>RODZAJ_ID</name>
+          <name>ID_PRODUCENTA</name>
           <parent class="oracle.javatools.db.NameBasedID">
-            <name>PARAMETR</name>
+            <name>SPRZETY</name>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.NameBasedID">
+        <name>PRODUCENT_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>PRODUCENCI</name>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>SPRZET_RODZAJ_SPRZETU_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>ID_RODZAJU</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>SPRZETY</name>
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
@@ -129,7 +180,7 @@
       <referenceID class="oracle.javatools.db.NameBasedID">
         <name>RODZAJ_SPRZETU_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
-          <name>RODZAJ_SPRZETU</name>
+          <name>RODZAJE_SPRZETU</name>
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
@@ -138,22 +189,51 @@
       </referenceID>
     </constraint>
     <constraint class="oracle.javatools.db.CheckConstraint">
-      <name>TYP_WARTOSCI_CHK1</name>
-      <checkCondition>TYP_WARTOSCI = UPPER(TYP_WARTOSCI)</checkCondition>
+      <name>CENA_CHK</name>
+      <checkCondition>CENA &gt; 0
+</checkCondition>
       <enabled>true</enabled>
     </constraint>
     <constraint class="oracle.javatools.db.CheckConstraint">
-      <name>TYP_WARTOSCI_CHK2</name>
-      <checkCondition>TYP_WARTOSCI IN ( &apos;LICZBA&apos;, &apos;TEKST&apos;)</checkCondition>
+      <name>ILOSC_CHK</name>
+      <checkCondition>ILOSC &gt;= 0</checkCondition>
       <enabled>true</enabled>
     </constraint>
   </constraints>
   <indexes>
     <index>
-      <name>PARAMETR_PK</name>
+      <name>SPRZETY_ID_PRODUCENTA_IDX</name>
       <columnExpressions>
         <columnExpression>
-          <expressionSource>PARAMETR_ID</expressionSource>
+          <expressionSource>ID_PRODUCENTA</expressionSource>
+          <orderType>ASC</orderType>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>SPRZETY_ID_RODZAJU_IDX</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>ID_RODZAJU</expressionSource>
+          <orderType>ASC</orderType>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>SPRZETY_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>ID_SPRZETU</expressionSource>
           <orderType>ASC</orderType>
         </columnExpression>
       </columnExpressions>
