@@ -56,7 +56,7 @@
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>PRODUCENT_PK</name>
+      <name>PRODUCENCI_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>ID_PRODUCENTA</name>
@@ -82,7 +82,7 @@
       </indexID>
     </constraint>
     <constraint class="oracle.javatools.db.UniqueConstraint">
-      <name>PRODUCENT_UK</name>
+      <name>PRODUCENCI_UK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>NAZWA</name>

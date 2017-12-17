@@ -50,7 +50,7 @@
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>RODZAJ_SPRZETU_PK</name>
+      <name>RODZAJE_SPRZETU_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>ID_RODZAJU</name>
@@ -76,7 +76,7 @@
       </indexID>
     </constraint>
     <constraint class="oracle.javatools.db.UniqueConstraint">
-      <name>RODZAJ_SPRZETU_UK</name>
+      <name>RODZAJE_SPRZETU_UK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>NAZWA</name>

@@ -120,7 +120,7 @@
       </indexID>
     </constraint>
     <constraint class="oracle.javatools.db.FKConstraint">
-      <name>PARAMETR_SPRZETU_PARAMETR_FK</name>
+      <name>PARAMETRY_PARAM_SPRZETU_FK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>ID_PARAMETRU</name>
@@ -145,7 +145,7 @@
       </columnIDs>
       <enabled>true</enabled>
       <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>PARAMETR_PK</name>
+        <name>PARAMETRY_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
           <name>PARAMETRY</name>
           <schemaName>SCHEMA1</schemaName>
@@ -156,7 +156,7 @@
       </referenceID>
     </constraint>
     <constraint class="oracle.javatools.db.FKConstraint">
-      <name>PARAMETR_SPRZETU_SPRZET_FK</name>
+      <name>SPRZETY_PARAM_SPRZETU_FK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>ID_SPRZETU</name>
@@ -171,7 +171,7 @@
       </columnIDs>
       <enabled>true</enabled>
       <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>SPRZET_PK</name>
+        <name>SPRZETY_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
           <name>SPRZETY</name>
           <schemaName>SCHEMA1</schemaName>

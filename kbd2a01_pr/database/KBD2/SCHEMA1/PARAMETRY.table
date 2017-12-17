@@ -85,8 +85,44 @@
     </column>
   </columns>
   <constraints>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <name>PARAM_TYP_WARTOSCI_CHK1</name>
+      <checkCondition>TYP_WARTOSCI IN ( &apos;T&apos;, &apos;N&apos;)</checkCondition>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <name>PARAM_TYP_WARTOSCI_CHK2</name>
+      <checkCondition>TYP_WARTOSCI = UPPER(TYP_WARTOSCI)</checkCondition>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>RODZAJE_SPRZETU_PARAMETRY_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>ID_RODZAJU</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>PARAMETRY</name>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.NameBasedID">
+        <name>RODZAJE_SPRZETU_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>RODZAJE_SPRZETU</name>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>PARAMETR_PK</name>
+      <name>PARAMETRY_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>ID_PARAMETRU</name>
@@ -111,7 +147,7 @@
       </columnIDs>
       <enabled>true</enabled>
       <indexID class="oracle.javatools.db.NameBasedID">
-        <name>PARAMETR_PK</name>
+        <name>PARAMETRY_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
           <name>PARAMETRY</name>
           <schemaName>SCHEMA1</schemaName>
@@ -120,42 +156,6 @@
         <schemaName>SCHEMA1</schemaName>
         <type>INDEX</type>
       </indexID>
-    </constraint>
-    <constraint class="oracle.javatools.db.FKConstraint">
-      <name>PARAMETR_RODZAJ_SPRZETU_FK</name>
-      <columnIDs>
-        <columnID class="oracle.javatools.db.NameBasedID">
-          <name>ID_PARAMETRU</name>
-          <parent class="oracle.javatools.db.NameBasedID">
-            <name>PARAMETRY</name>
-            <schemaName>SCHEMA1</schemaName>
-            <type>TABLE</type>
-          </parent>
-          <schemaName>SCHEMA1</schemaName>
-          <type>COLUMN</type>
-        </columnID>
-      </columnIDs>
-      <enabled>true</enabled>
-      <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>RODZAJ_SPRZETU_PK</name>
-        <parent class="oracle.javatools.db.NameBasedID">
-          <name>RODZAJE_SPRZETU</name>
-          <schemaName>SCHEMA1</schemaName>
-          <type>TABLE</type>
-        </parent>
-        <schemaName>SCHEMA1</schemaName>
-        <type>CONSTRAINT</type>
-      </referenceID>
-    </constraint>
-    <constraint class="oracle.javatools.db.CheckConstraint">
-      <name>PARAM_TYP_WARTOSCI_CHK1</name>
-      <checkCondition>TYP_WARTOSCI IN ( &apos;T&apos;, &apos;N&apos;)</checkCondition>
-      <enabled>true</enabled>
-    </constraint>
-    <constraint class="oracle.javatools.db.CheckConstraint">
-      <name>PARAM_TYP_WARTOSCI_CHK2</name>
-      <checkCondition>TYP_WARTOSCI = UPPER(TYP_WARTOSCI)</checkCondition>
-      <enabled>true</enabled>
     </constraint>
   </constraints>
   <indexes>
@@ -174,7 +174,7 @@
       <systemGenerated>false</systemGenerated>
     </index>
     <index>
-      <name>PARAMETR_PK</name>
+      <name>PARAMETRY_PK</name>
       <columnExpressions>
         <columnExpression>
           <expressionSource>ID_PARAMETRU</expressionSource>

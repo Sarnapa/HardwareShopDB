@@ -111,7 +111,7 @@
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.PKConstraint">
-      <name>SPRZET_PK</name>
+      <name>SPRZETY_PK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>ID_SPRZETU</name>
@@ -137,7 +137,7 @@
       </indexID>
     </constraint>
     <constraint class="oracle.javatools.db.FKConstraint">
-      <name>SPRZET_PRODUCENT_FK</name>
+      <name>PRODUCENCI_SPRZETY_FK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>ID_PRODUCENTA</name>
@@ -152,7 +152,7 @@
       </columnIDs>
       <enabled>true</enabled>
       <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>PRODUCENT_PK</name>
+        <name>PRODUCENCI_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
           <name>PRODUCENCI</name>
           <schemaName>SCHEMA1</schemaName>
@@ -163,7 +163,7 @@
       </referenceID>
     </constraint>
     <constraint class="oracle.javatools.db.FKConstraint">
-      <name>SPRZET_RODZAJ_SPRZETU_FK</name>
+      <name>RODZAJE_SPRZETU_SPRZETY_FK</name>
       <columnIDs>
         <columnID class="oracle.javatools.db.NameBasedID">
           <name>ID_RODZAJU</name>
@@ -178,7 +178,7 @@
       </columnIDs>
       <enabled>true</enabled>
       <referenceID class="oracle.javatools.db.NameBasedID">
-        <name>RODZAJ_SPRZETU_PK</name>
+        <name>RODZAJE_SPRZETU_PK</name>
         <parent class="oracle.javatools.db.NameBasedID">
           <name>RODZAJE_SPRZETU</name>
           <schemaName>SCHEMA1</schemaName>
