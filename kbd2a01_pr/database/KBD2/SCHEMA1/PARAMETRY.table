@@ -46,6 +46,12 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">T = wartosc tekstowa, N = wartosc numeryczna</value>
+        </entry>
+      </properties>
     </column>
     <column>
       <name>JEDNOSTKA</name>
@@ -162,7 +168,7 @@
           <orderType>ASC</orderType>
         </columnExpression>
       </columnExpressions>
-      <indexType>UNIQUE</indexType>
+      <indexType>NORMAL</indexType>
       <schema>
         <name>SCHEMA1</name>
       </schema>
