@@ -198,7 +198,7 @@ COMMENT ON TABLE HISTORIA_CEN IS 'Tabela zawiera historie cen dla tych sprzetow,
 
 COMMENT ON TABLE PARAMETRY_SPRZETU IS 'Wartosc parametru w WARTOSC_TEKSTOWA lub WARTOSC_NUMERYCZNA';
 
-COMMENT ON TABLE PRODUCENCI IS 'Na jednego producenta mo¿e przypadac wiele krajow produkcji.';
+COMMENT ON TABLE PRODUCENCI IS 'Na jednego producenta moze przypadac wiele krajow produkcji.';
 
 COMMENT ON COLUMN HISTORIA_CEN.DATA_ZMIANY IS 'Data, kiedy dana cena przestala byc obowiazujaca';
 

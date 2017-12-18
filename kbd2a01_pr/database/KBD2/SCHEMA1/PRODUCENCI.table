@@ -155,7 +155,7 @@
   <properties>
     <entry>
       <key>Comment</key>
-      <value class="java.lang.String">Na jednego producenta może przypadac wiele krajow produkcji.</value>
+      <value class="java.lang.String">Na jednego producenta moze przypadac wiele krajow produkcji.</value>
     </entry>
     <entry>
       <key>TableType</key>
