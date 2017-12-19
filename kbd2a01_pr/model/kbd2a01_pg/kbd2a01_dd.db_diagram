@@ -1202,7 +1202,7 @@
       <property xmi:type='DI:Property' key='fontColor' value='#0'/>
       <property xmi:type='DI:Property' key='fillColor' value='#ffffff'/>
       <semanticModel xmi:type='DI:SimpleSemanticModelBridge' typeInfo='Note'/>
-      <size xmi:type='DI:Dimension' height='60.0' width='131.0'/>
+      <size xmi:type='DI:Dimension' height='75.0' width='135.0'/>
     </contained>
     <contained xmi:type='DI:GraphNode' xmi:id='id7c30e310-e356-4648-8525-2a7210876a12'>
       <anchorage xmi:type='DI:GraphConnector' xmi:id='id7af1f919-2334-49ae-87d5-a10162c80602' graphEdge='iddac6abf0-e285-4924-9b18-6b545b73658c'/>
@@ -1343,7 +1343,7 @@
             </contained>
             <contained xmi:type='DI:GraphNode' xmi:id='id647b1a42-042a-448d-833a-a690d465b6f1'>
               <property xmi:type='DI:Property' key='id' value='ObjectText'/>
-              <property xmi:type='DI:Property' key='preferredWidth' value='248.0'/>
+              <property xmi:type='DI:Property' key='preferredWidth' value='263.0'/>
               <property xmi:type='DI:Property' key='visible' value='true'/>
               <property xmi:type='DI:Property' key='editable' value='true'/>
               <property xmi:type='DI:Property' key='fixedWidth' value='false'/>
