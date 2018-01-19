@@ -1,8 +1,8 @@
 SELECT
-  XMLElement("ParametryRodzajowSprzetow",
+  XMLElement("ParametryRodzajowSprzetu",
     XMLAgg(
       XMLElement("RodzajSprzetu",
-      XMLAttributes(ID_Rodzaju as "ID"),
+      XMLAttributes(R.ID_Rodzaju as "ID"),
       XMLForest(
         R.Nazwa as "Nazwa",
         R.Opis as "Opis"),
@@ -10,7 +10,7 @@ SELECT
         (SELECT
           XMLAgg(
             XMLElement("Parametr",
-            XMLAttributes(ID_Parametru as "ID"),
+            XMLAttributes(P.ID_Parametru as "ID"),
             XMLForest(
               P.Nazwa as "Nazwa",
               P.Typ_Wartosci as "Typ_Wartosci",
@@ -18,13 +18,52 @@ SELECT
             )
           )
         FROM
-          PARAMETRY P
+          Parametry P
         WHERE
-          P.ID_RODZAJU = R.ID_RODZAJU
+          P.ID_Rodzaju = R.ID_Rodzaju
         )
       )
     )
   )
 ).getClobVal()
 FROM
-  RODZAJE_SPRZETU R;
+  Rodzaje_Sprzetu R;
+
+SELECT
+  XMLElement("SprzetyProducentow",
+    XMLAgg(
+      XMLElement("Producent",
+      XMLAttributes(P.Nazwa as "Nazwa"),
+      XMLElement("KrajeProdukcji",
+        XMLAgg(
+          XMLElement("Kraj",
+          XMLAttributes(P.Kraj_produkcji as "Nazwa"),
+          XMLElement("Sprzety",
+            (SELECT
+              XMLAgg(
+                XMLElement("Sprzet",
+                XMLAttributes(S.ID_Sprzetu as "ID"),
+                XMLForest(
+                  S.Nazwa_modelu as "Nazwa",
+                  R.Nazwa as "RodzajSprzetu",
+                  S.Cena as "Cena",
+                  S.Ilosc as "Ilosc")
+                )
+              )
+            FROM
+              Sprzety S, Rodzaje_Sprzetu R
+            WHERE
+              R.ID_Rodzaju = S.ID_Rodzaju AND
+              P.ID_Producenta = S.ID_Producenta
+            )
+          )
+          )
+        )
+      )
+      )
+    )
+  ).getClobVal()
+FROM
+    Producenci P
+GROUP BY
+    P.Nazwa;

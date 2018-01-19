@@ -1,0 +1,167 @@
+<ParametryRodzajowSprzetu>
+    <RodzajSprzetu ID="21">
+        <Nazwa>TEST</Nazwa>
+        <Opis>TEST</Opis>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="1">
+        <Nazwa>Karta graficzna</Nazwa>
+        <Parametry>
+            <Parametr ID="8">
+                <Nazwa>Producent chipsetu</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="9">
+                <Nazwa>Rodzaj chipsetu</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="10">
+                <Nazwa>Ilość pamięci RAM</Nazwa>
+                <Typ_Wartosci>N</Typ_Wartosci>
+                <Jednostka>GB</Jednostka>
+            </Parametr>
+            <Parametr ID="11">
+                <Nazwa>Rodzaj pamięci RAM</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="12">
+                <Nazwa>Typ złącza</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="13">
+                <Nazwa>Taktowanie rdzenia</Nazwa>
+                <Typ_Wartosci>N</Typ_Wartosci>
+                <Jednostka>MHz</Jednostka>
+            </Parametr>
+            <Parametr ID="14">
+                <Nazwa>Taktowanie pamięci</Nazwa>
+                <Typ_Wartosci>N</Typ_Wartosci>
+                <Jednostka>MHz</Jednostka>
+            </Parametr>
+        </Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="2">
+        <Nazwa>Procesor</Nazwa>
+        <Parametry>
+            <Parametr ID="15">
+                <Nazwa>Linia</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="16">
+                <Nazwa>Typ gniazda</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="17">
+                <Nazwa>Liczba rdzeni</Nazwa>
+                <Typ_Wartosci>N</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="18">
+                <Nazwa>Liczba wątków</Nazwa>
+                <Typ_Wartosci>N</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="19">
+                <Nazwa>Częstotliwość taktowania procesora</Nazwa><
+                Typ_Wartosci>N</Typ_Wartosci>
+                <Jednostka>GHz</Jednostka>
+            </Parametr>
+        </Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="3">
+        <Nazwa>Płyta główna</Nazwa>
+        <Parametry>
+            <Parametr ID="20">
+                <Nazwa>Standard płyty</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="21">
+                <Nazwa>Chipset płyty</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="22">
+                <Nazwa>Gniazdo procesora</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="23">
+                <Nazwa>Maksymalna ilość procesorów</Nazwa>
+                <Typ_Wartosci>N</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="24">
+                <Nazwa>Standard pamięci</Nazwa>
+                <Typ_Wartosci>T</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="25">
+                <Nazwa>Ilość slotów pamięci</Nazwa>
+                <Typ_Wartosci>N</Typ_Wartosci>
+            </Parametr>
+            <Parametr ID="26">
+                <Nazwa>Maksymalna ilość pamięci</Nazwa>
+                <Typ_Wartosci>N</Typ_Wartosci>
+                <Jednostka>GB</Jednostka>
+            </Parametr>
+        </Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="4">
+        <Nazwa>Pamięć RAM</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="5">
+        <Nazwa>Obudowa</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="6">
+        <Nazwa>Zasilacz</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="7">
+        <Nazwa>Dysk HDD</Nazwa>
+        <Opis>Pamięć masowa wykorzystująca nośnik magnetyczny do przechowywania danych</Opis>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="8">
+        <Nazwa>Dysk SSD</Nazwa>
+        <Opis>Urządzenie pamięci masowej zbudowane w oparciu o pamięć flash</Opis>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="9">
+        <Nazwa>Dysk zewnętrzny</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="10">
+        <Nazwa>Kieszeń na dysk</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="11">
+        <Nazwa>Karta pamięci</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="12">
+        <Nazwa>Pendrive</Nazwa>
+        <Opis>Urządzenie przenośne zawierające pamięć nieulotną typu flash, zaprojektowane do współpracy z komputerem przez port USB i używane do przenoszenia danych między komputerami oraz urządzeniami obsługującymi pamięci USB</Opis>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="13">
+        <Nazwa>Czytnik kart pamięci</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="14">
+        <Nazwa>Płyta CD</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="15">
+        <Nazwa>Płyta DVD</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="16">
+        <Nazwa>Laptop</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="17">
+        <Nazwa>Ultrabook</Nazwa>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+    <RodzajSprzetu ID="22">
+        <Nazwa>test2</Nazwa>
+        <Opis>test2</Opis>
+        <Parametry></Parametry>
+    </RodzajSprzetu>
+</ParametryRodzajowSprzetu>

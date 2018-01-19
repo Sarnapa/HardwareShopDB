@@ -1,0 +1,227 @@
+<SprzetyProducentow>
+    <Producent Nazwa="ADATA Technology Co.">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Republika Chińska">
+                <Sprzety>
+                    <Sprzet ID="9">
+                        <Nazwa>SU800</Nazwa>
+                        <RodzajSprzetu>Dysk SSD</RodzajSprzetu>
+                        <Cena>235</Cena>
+                        <Ilosc>30</Ilosc>
+                    </Sprzet>
+                    <Sprzet ID="11">
+                        <Nazwa>HC660</Nazwa>
+                        <RodzajSprzetu>Dysk zewnętrzny</RodzajSprzetu>
+                        <Cena>223,89</Cena>
+                        <Ilosc>2</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety>
+                    <Sprzet ID="10>
+                        <Nazwa>SU900</Nazwa>
+                        <RodzajSprzetu>Dysk SSD</RodzajSprzetu>
+                        <Cena>440</Cena>
+                        <Ilosc>22</Ilosc>
+                        </Sprzet>
+                    <Sprzet ID="12">
+                        <Nazwa>SDXC 64GB Class 10</Nazwa>
+                        <RodzajSprzetu>Karta pamięci</RodzajSprzetu>
+                        <Cena>105,86</Cena>
+                        <Ilosc>12</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+    <Producent Nazwa="Advanced Micro Devices, Inc.">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Niemcy">
+                <Sprzety></Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety></Sprzety>
+            </Kraj>
+            <Kraj Nazwa="Stany Zjednoczone">
+                <Sprzety>
+                    <Sprzet ID="8">
+                        <Nazwa>Ryzen 5 1600</Nazwa>
+                        <RodzajSprzetu>Procesor</RodzajSprzetu>
+                        <Cena>860</Cena>
+                        <Ilosc>20</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+    <Producent Nazwa="Asus">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Republika Chińska">
+                <Sprzety>
+                    <Sprzet ID="22">
+                        <Nazwa>B85M-G</Nazwa>
+                        <RodzajSprzetu>Płyta główna</RodzajSprzetu>
+                        <Cena>315</Cena>
+                        <Ilosc>8</Ilosc>
+                    </Sprzet>
+                    <Sprzet ID="1">
+                        <Nazwa>GeForce GTX 1050 TI</Nazwa>
+                        <RodzajSprzetu>Karta graficzna</RodzajSprzetu>
+                        <Cena>829</Cena>
+                        <Ilosc>50</Ilosc>
+                    </Sprzet>
+                    <Sprzet ID="4">
+                        <Nazwa>GeForce GTX 1070</Nazwa>
+                        <RodzajSprzetu>Karta graficzna</RodzajSprzetu>
+                        <Cena>2187</Cena>
+                        <Ilosc>8</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety></Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+    <Producent Nazwa="Gigabyte">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Republika Chińska">
+                <Sprzety>
+                    <Sprzet ID="21">
+                        <Nazwa>Z370 AORUS Gaming K3</Nazwa>
+                        <RodzajSprzetu>Płyta główna</RodzajSprzetu>
+                        <Cena>579</Cena>
+                        <Ilosc>14</Ilosc>
+                    </Sprzet>
+                    <Sprzet ID="5">
+                        <Nazwa>GeForce GTX 1060</Nazwa>
+                        <RodzajSprzetu>Karta graficzna</RodzajSprzetu>
+                        <Cena>995</Cena>
+                        <Ilosc>14</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety></Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+    <Producent Nazwa="Hewlett-Packard Company">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Irlandia">
+                <Sprzety></Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety></Sprzety>
+            </Kraj>
+            <Kraj Nazwa="Stany Zjednoczone">
+                <Sprzety></Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+    <Producent Nazwa="Intel">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Irlandia">
+                <Sprzety>
+                    <Sprzet ID="7">
+                        <Nazwa>Core i3-7100</Nazwa>
+                        <RodzajSprzetu>Procesor</RodzajSprzetu>
+                        <Cena>464,99</Cena>
+                        <Ilosc>35</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety></Sprzety>
+            </Kraj>
+            <Kraj Nazwa="Stany Zjednoczone">
+                <Sprzety>
+                    <Sprzet ID="6">
+                        <Nazwa>Core i5-7400</Nazwa>
+                        <RodzajSprzetu>Procesor</RodzajSprzetu>
+                        <Cena>709</Cena>
+                        <Ilosc>40</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj Nazwa="Izrael">
+                <Sprzety></Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+    <Producent Nazwa="MSI">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Republika Chińska">
+                <Sprzety>
+                    <Sprzet ID="20">
+                        <Nazwa>B250M PRO-VDH</Nazwa>
+                        <RodzajSprzetu>Płyta główna</RodzajSprzetu>
+                        <Cena>285</Cena>
+                        <Ilosc>21</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety>
+                    <Sprzet ID="41">
+                        <Nazwa>TEST</Nazwa>
+                        <RodzajSprzetu>Procesor</RodzajSprzetu>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+    <Producent Nazwa="SanDisk Corporation">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Japonia">
+                <Sprzety>
+                    <Sprzet ID="29">
+                        <Nazwa>Ultra SDHC 64GB</Nazwa>
+                        <RodzajSprzetu>Karta pamięci</RodzajSprzetu>
+                        <Cena>99,85</Cena>
+                        <Ilosc>5</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety>
+                    <Sprzet ID="30">
+                        <Nazwa>Extreme PRO SDXC 128 GB</Nazwa>
+                        <RodzajSprzetu>Karta pamięci</RodzajSprzetu>
+                        <Cena>390</Cena>
+                        <Ilosc>4</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj Nazwa="Stany Zjednoczone">
+                <Sprzety></Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+    <Producent Nazwa="Seagate Technology">
+        <KrajeProdukcji>
+            <Kraj Nazwa="Republika Chińska">
+                <Sprzety>
+                    <Sprzet ID="27">
+                        <Nazwa>Backup Plus, 2TB</Nazwa>
+                        <RodzajSprzetu>Dysk zewnętrzny</RodzajSprzetu>
+                        <Cena>339,89</Cena>
+                        <Ilosc>4</Ilosc>
+                    </Sprzet>
+                    <Sprzet ID="28"><Nazwa>Expansion, 2TB</Nazwa>
+                        <RodzajSprzetu>Dysk zewnętrzny</RodzajSprzetu>
+                        <Cena>324,99</Cena>
+                        <Ilosc>6</Ilosc>
+                    </Sprzet>
+                </Sprzety>
+            </Kraj>
+            <Kraj>
+                <Sprzety></Sprzety>
+            </Kraj>
+            <Kraj Nazwa="Stany Zjednoczone">
+                <Sprzety></Sprzety>
+            </Kraj>
+        </KrajeProdukcji>
+    </Producent>
+</SprzetyProducentow>
