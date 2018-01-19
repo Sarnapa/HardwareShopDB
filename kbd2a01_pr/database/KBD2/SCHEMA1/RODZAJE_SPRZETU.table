@@ -38,7 +38,7 @@
         <attributeValues>
           <entry>
             <key>size</key>
-            <value class="java.lang.Long">256</value>
+            <value class="java.lang.Long">2048</value>
           </entry>
         </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
