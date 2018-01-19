@@ -1,0 +1,30 @@
+SELECT
+  XMLElement("ParametryRodzajowSprzetow",
+    XMLAgg(
+      XMLElement("RodzajSprzetu",
+      XMLAttributes(ID_Rodzaju as "ID"),
+      XMLForest(
+        R.Nazwa as "Nazwa",
+        R.Opis as "Opis"),
+      XMLElement("Parametry",
+        (SELECT
+          XMLAgg(
+            XMLElement("Parametr",
+            XMLAttributes(ID_Parametru as "ID"),
+            XMLForest(
+              P.Nazwa as "Nazwa",
+              P.Typ_Wartosci as "Typ_Wartosci",
+              P.Jednostka as "Jednostka")
+            )
+          )
+        FROM
+          PARAMETRY P
+        WHERE
+          P.ID_RODZAJU = R.ID_RODZAJU
+        )
+      )
+    )
+  )
+).getClobVal()
+FROM
+  RODZAJE_SPRZETU R;
